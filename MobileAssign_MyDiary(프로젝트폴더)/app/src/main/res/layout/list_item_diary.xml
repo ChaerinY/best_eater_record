@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_pic"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginVertical="8dp"
+            android:layout_marginRight="6dp"
+            android:src="@drawable/none_img"
+            android:scaleType="centerCrop"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/black"
+                    android:text="글 제목"
+                    android:singleLine="true"
+                    android:fontFamily="@font/mabinogi_classic_otf"
+                    android:textSize="20sp"/>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_user_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="5dp"
+                    android:text="2021-10-11 (월)"
+                    android:fontFamily="@font/mabinogi_classic_otf"
+                    android:textSize="11dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/iv_rating"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/img_rating1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginHorizontal="6dp"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tv_location"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="#서면"
+                            android:fontFamily="@font/mabinogi_classic_otf"
+                            android:textColor="#fc5335"
+                            android:textSize="15dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_category"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="#밥집"
+                            android:fontFamily="@font/mabinogi_classic_otf"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="#fc5335"
+                            android:textSize="15dp"
+                            />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="상세설명 블라블라블라"
+                        android:fontFamily="@font/mabinogi_classic_otf"
+                        android:layout_marginTop="3dp"
+                        android:textSize="15dp"
+                        android:maxLines="2"
+                        android:textColor="#7a7a7a"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="#B3B3B3"/>
+
+
+</LinearLayout>
